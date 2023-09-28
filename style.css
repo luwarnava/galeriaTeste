@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgb(217, 219, 236);
+}
+
+
+.container {
+    background-color: rgb(36, 30, 83);
+    color: #e8e6e6;
+
+    margin-top: 1.2rem;
+    margin-bottom: 2rem;
+    padding: 1.2rem 1rem;
+    border-radius: 1.5rem;
+}
+.container > h1, p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.container > h1 {  
+    font-weight: 600;
+    font-size: 3.2rem;
+}
+.container > p {
+    font-size: 1.2rem;
+}
+
+
+.galery {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 3rem;
+}
+.galery img {
+    /*height: 25vw;*/
+    padding: 1.8rem;
+    transition: all 200ms ease-out;
+
+}
+.galery img:hover {
+    filter: hue-rotate(7deg) contrast(100%) saturate(120%);
+    transform: scale(1.1) rotate(-2deg);
+}
+.card-title {
+    font-family: 'Montez', cursive;
+    font-weight: bold;
+    font-size: 1.5rem; 
+
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .galery img {
+        height: 25vw;
+    }
+}
